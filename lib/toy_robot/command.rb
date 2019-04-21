@@ -1,6 +1,5 @@
 module ToyRobot 
   class Command
-
     def self.process(command)
       case command
         when /\APLACE (?<x>\d+),(?<y>\d+),(?<direction>\w+)\Z/
@@ -17,7 +16,5 @@ module ToyRobot
           [:invalid, command] 
       end
     end
-
-    
   end 
 end
