@@ -34,7 +34,6 @@ module ToyRobot
         end
       end
 
-
       def turn_left 
         turn(:left)
       end
