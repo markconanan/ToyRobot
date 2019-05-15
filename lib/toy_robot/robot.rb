@@ -57,8 +57,8 @@ module ToyRobot
 
       def report
         {
-          y: y,
           x: x,
+          y: y,
           direction: direction
         }
       end
