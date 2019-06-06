@@ -1,35 +1,26 @@
 # ToyRobot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/toy_robot`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Overview
 
-TODO: Delete this and the text above, and describe your gem
+* The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.
+* There are no other obstructions on the table surface.
+* The robot is free to roam around the surface of the table, but must be prevented
+from falling to destruction. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
-## Installation
+## Setup
 
-Add this line to your application's Gemfile:
+In the directory:
 
-```ruby
-gem 'toy_robot'
-```
+1. Run "bundle install"
+2. Run “chmod +x exe/toy_robot”
 
-And then execute:
+## Running the Application
 
-    $ bundle
+1. Put the commands in the commands.txt file in the directory.
+2. Run "bundle exec exe/toy_robot commands.txt"
 
-Or install it yourself as:
+## Assumptions
 
-    $ gem install toy_robot
+1. Application will ignore invalid commands in the sequence, but it will be reported.
 
-## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/toy_robot.
